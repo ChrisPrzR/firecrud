@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="conatainer">
+        <form id="item-form">
+            <div>
+                <input type="text" id="item-name" class="form-control" placeholder="Item Name">
+                <input type="number" id="item-price" class="form-control" placeholder="Item Price">
+                <input type="submit" value="Add to list">
+            </div>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item's Name</th>
+                    <th>Item's Price </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="item-list"></tbody>
+        </table>
+    </div>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
